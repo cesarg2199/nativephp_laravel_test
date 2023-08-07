@@ -16,6 +16,11 @@ class MainController extends Controller
         return inertia('Main');
     }
 
+    public function settings(Request $request): Response
+    {
+        return inertia('Settings');
+    }
+
     public function hide(Request $request): void
     {
         $status = $request->input('status');
